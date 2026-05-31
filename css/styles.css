@@ -1,0 +1,191 @@
+/* Estilos generales */
+:root {
+    --primary-color: #2E7D32; /* Verde andino */
+    --secondary-color: #FF8F00; /* Naranja - sol andino */
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --text-color: #333;
+    --text-light: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos específicos para cada página */
+.login-page, .register-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.dashboard-page, .lessons-page, .lesson-page, 
+.dictionary-page, .culture-page, .games-page {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--primary-color);
+    background-color: rgba(46, 125, 50, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.sidebar .nav-link i {
+    margin-right: 4px;
+    color: var(--primary-color);
+}
+
+.sidebar .nav-link.active i {
+    color: white;
+}
+
+/* Main content */
+main {
+    margin-top: 56px;
+    padding: 20px 0;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+    background-color: #1e5a23;
+    border-color: #1e5a23;
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e65100;
+    border-color: #e65100;
+    color: white;
+}
+
+/* Progress bars */
+.progress {
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        padding: 0;
+    }
+    
+    main {
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+}
+
+/* Estilos específicos para la página de lección */
+.lesson-section {
+    padding: 20px 0;
+}
+
+.audio-player {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Estilos para el diccionario */
+.dictionary-entry {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la página de cultura */
+.culture-card {
+    transition: all 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
