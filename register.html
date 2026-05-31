@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Quechua Ayni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="register-page">
+    <header class="container-fluid bg-success text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="images/logo.png" alt="Quechua Ayni" class="logo me-2">
+                <h1 class="h4 mb-0">Quechua Ayni</h1>
+            </div>
+            <nav class="d-none d-md-block">
+                <a href="index.html" class="text-white mx-2">Inicio</a>
+                <a href="#" class="text-white mx-2">Acerca de</a>
+                <a href="#" class="text-white mx-2">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-center mb-4">Crear Cuenta</h2>
+                        <form id="register-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="first-name" class="form-label">Nombres</label>
+                                    <input type="text" class="form-control" id="first-name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="last-name" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="last-name" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirm-password" class="form-label">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="confirm-password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="school" class="form-label">Institución Educativa</label>
+                                <input type="text" class="form-control" id="school">
+                            </div>
+                            <div class="mb-3">
+                                <label for="grade" class="form-label">Grado</label>
+                                <select class="form-select" id="grade">
+                                    <option value="1">1° Secundaria</option>
+                                    <option value="2">2° Secundaria</option>
+                                    <option value="3">3° Secundaria</option>
+                                    <option value="4">4° Secundaria</option>
+                                    <option value="5">5° Secundaria</option>
+                                </select>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    Acepto los <a href="#">términos y condiciones</a>
+                                </label>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning">Registrarse</button>
+                            </div>
+                        </form>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p class="mb-0">¿Ya tienes una cuenta? <a href="index.html">Inicia sesión</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Quechua Ayni - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

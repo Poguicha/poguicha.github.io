@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecciones - Quechua Ayni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="lessons-page">
+    <header class="container-fluid bg-success text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="images/logo.png" alt="Quechua Ayni" class="logo me-2">
+                <h1 class="h4 mb-0 d-none d-md-block">Quechua Ayni</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle me-1"></i>
+                        <span class="d-none d-md-inline">Juan Pérez</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configuración</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="lessons.html">
+                                <i class="bi bi-book me-2"></i>Lecciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dictionary.html">
+                                <i class="bi bi-translate me-2"></i>Diccionario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="culture.html">
+                                <i class="bi bi-globe-americas me-2"></i>Cultura Quechua
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">
+                                <i class="bi bi-joystick me-2"></i>Juegos Educativos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">
+                                <i class="bi bi-graph-up me-2"></i>Mi Progreso
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Lecciones de Quechua</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-success">Todos</button>
+                            <button type="button" class="btn btn-sm btn-success">Básico</button>
+                            <button type="button" class="btn btn-sm btn-outline-success">Intermedio</button>
+                            <button type="button" class="btn btn-sm btn-outline-success">Avanzado</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Lección 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Introducción al Quechua</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">Básico</span>
+                                    <span class="text-success">
+                                        <i class="bi bi-check-circle-fill"></i> Completado
+                                    </span>
+                                </div>
+                                <p class="card-text">Aprende los conceptos básicos del idioma quechua y su importancia cultural.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Vocabulario básico
+                                        <span class="badge bg-success rounded-pill">100%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Ejercicios
+                                        <span class="badge bg-success rounded-pill">90%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Pronunciación
+                                        <span class="badge bg-success rounded-pill">85%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <a href="lesson.html" class="btn btn-outline-success">Repasar Lección</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lección 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Números en Quechua</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">Básico</span>
+                                    <span class="text-success">
+                                        <i class="bi bi-check-circle-fill"></i> Completado
+                                    </span>
+                                </div>
+                                <p class="card-text">Aprende a contar del 1 al 100 y a usar números en contextos cotidianos.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Vocabulario numérico
+                                        <span class="badge bg-success rounded-pill">95%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Ejercicios
+                                        <span class="badge bg-success rounded-pill">85%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Pronunciación
+                                        <span class="badge bg-warning rounded-pill">70%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <a href="lesson.html" class="btn btn-outline-success">Repasar Lección</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lección 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Saludos y Presentaciones</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">Básico</span>
+                                    <span class="text-warning">
+                                        <i class="bi bi-arrow-right-circle-fill"></i> En Progreso
+                                    </span>
+                                </div>
+                                <p class="card-text">Aprende a saludar, presentarte y mantener conversaciones básicas.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Vocabulario
+                                        <span class="badge bg-success rounded-pill">80%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Ejercicios
+                                        <span class="badge bg-warning rounded-pill">60%</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Pronunciación
+                                        <span class="badge bg-danger rounded-pill">40%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <a href="lesson.html" class="btn btn-warning">Continuar Lección</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lección 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="card-title mb-0">Familia y Relaciones</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">Básico</span>
+                                    <span class="text-muted">
+                                        <i class="bi bi-lock-fill"></i> Bloqueado
+                                    </span>
+                                </div>
+                                <p class="card-text">Aprende vocabulario relacionado con la familia y relaciones personales.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item">Vocabulario familiar</li>
+                                    <li class="list-group-item">Ejercicios interactivos</li>
+                                    <li class="list-group-item">Diálogos prácticos</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-secondary" disabled>Completar lección anterior</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lección 5 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="card-title mb-0">Comida y Alimentación</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">Básico</span>
+                                    <span class="text-muted">
+                                        <i class="bi bi-lock-fill"></i> Bloqueado
+                                    </span>
+                                </div>
+                                <p class="card-text">Vocabulario sobre alimentos, comidas tradicionales y expresiones relacionadas.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item">Nombres de alimentos</li>
+                                    <li class="list-group-item">Frases útiles</li>
+                                    <li class="list-group-item">Cultura alimentaria</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-secondary" disabled>Completar lección anterior</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lección 6 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="card-title mb-0">Tiempo y Clima</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-warning">Intermedio</span>
+                                    <span class="text-muted">
+                                        <i class="bi bi-lock-fill"></i> Bloqueado
+                                    </span>
+                                </div>
+                                <p class="card-text">Aprende a hablar sobre el tiempo, estaciones y fenómenos climáticos.</p>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item">Vocabulario climático</li>
+                                    <li class="list-group-item">Expresiones temporales</li>
+                                    <li class="list-group-item">Pronósticos</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-secondary" disabled>Completar nivel básico</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Quechua Ayni - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

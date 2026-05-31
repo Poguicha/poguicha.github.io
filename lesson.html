@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección - Quechua Ayni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="lesson-page">
+    <header class="container-fluid bg-success text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="images/logo.png" alt="Quechua Ayni" class="logo me-2">
+                <h1 class="h4 mb-0 d-none d-md-block">Quechua Ayni</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle me-1"></i>
+                        <span class="d-none d-md-inline">Juan Pérez</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configuración</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lessons.html">
+                                <i class="bi bi-book me-2"></i>Lecciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dictionary.html">
+                                <i class="bi bi-translate me-2"></i>Diccionario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="culture.html">
+                                <i class="bi bi-globe-americas me-2"></i>Cultura Quechua
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">
+                                <i class="bi bi-joystick me-2"></i>Juegos Educativos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">
+                                <i class="bi bi-graph-up me-2"></i>Mi Progreso
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <div>
+                        <h1 class="h2">Saludos y Presentaciones</h1>
+                        <p class="mb-0 text-muted">Nivel Básico - Lección 3</p>
+                    </div>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-bookmark"></i> Guardar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-printer"></i> Imprimir
+                            </button>
+                        </div>
+                        <div class="progress" style="width: 150px; height: 30px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" 
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Sidebar de lección -->
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-light">
+                                <h5 class="card-title mb-0">Contenido de la Lección</h5>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <a href="#section1" class="list-group-item list-group-item-action active">
+                                    <i class="bi bi-play-circle me-2"></i>Introducción
+                                </a>
+                                <a href="#section2" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-file-text me-2"></i>Vocabulario Básico
+                                </a>
+                                <a href="#section3" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-headphones me-2"></i>Pronunciación
+                                </a>
+                                <a href="#section4" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-chat-square-text me-2"></i>Diálogos
+                                </a>
+                                <a href="#section5" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-pencil-square me-2"></i>Ejercicios
+                                </a>
+                                <a href="#section6" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-globe me-2"></i>Cultura
+                                </a>
+                                <a href="#section7" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-check-circle me-2"></i>Evaluación
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido de la lección -->
+                    <div class="col-lg-9">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <section id="section1" class="lesson-section">
+                                    <h3 class="mb-4"><i class="bi bi-play-circle text-success me-2"></i>Introducción</h3>
+                                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                                        <iframe class="embed-responsive-item w-100" height="400" 
+                                                src="https://www.youtube.com/embed/ejemplo" 
+                                                frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <p>En esta lección aprenderás los saludos básicos en quechua y cómo presentarte ante otras personas. Los saludos son una parte fundamental de cualquier idioma y en la cultura quechua tienen un significado especial.</p>
+                                    <div class="alert alert-info">
+                                        <i class="bi bi-lightbulb me-2"></i>
+                                        <strong>Consejo:</strong> Presta atención a la pronunciación, especialmente a los sonidos que no existen en español.
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <a href="#section2" class="btn btn-success">Continuar <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </section>
+
+                                <hr class="my-5">
+
+                                <section id="section2" class="lesson-section">
+                                    <h3 class="mb-4"><i class="bi bi-file-text text-success me-2"></i>Vocabulario Básico</h3>
+                                    <p>Estas son las palabras y frases más importantes que aprenderás en esta lección:</p>
+                                    
+                                    <div class="table-responsive mb-4">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="table-success">
+                                                <tr>
+                                                    <th>Quechua</th>
+                                                    <th>Español</th>
+                                                    <th>Pronunciación</th>
+                                                    <th>Audio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Allinllachu</td>
+                                                    <td>¿Cómo estás?</td>
+                                                    <td>A-yin-ya-chu</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-play-fill"></i> Escuchar
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Allillanmi</td>
+                                                    <td>Estoy bien</td>
+                                                    <td>A-yi-yan-mi</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-play-fill"></i> Escuchar
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rimaykullayki</td>
+                                                    <td>Gracias</td>
+                                                    <td>Ri-may-ku-ya-yki</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-play-fill"></i> Escuchar
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>¿Imataq sutiyki?</td>
+                                                    <td>¿Cómo te llamas?</td>
+                                                    <td>I-ma-taq su-ti-yki</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-play-fill"></i> Escuchar
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sutiyqa ___</td>
+                                                    <td>Me llamo ___</td>
+                                                    <td>Su-ti-y-qa ___</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-play-fill"></i> Escuchar
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="card bg-light mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-info-circle text-success me-2"></i>Nota Cultural</h5>
+                                            <p class="card-text">En muchas comunidades quechuas, los saludos van acompañados de un ligero apretón de manos o un movimiento de cabeza. Es importante mirar a los ojos cuando saludas como muestra de respeto.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <a href="#section1" class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Anterior</a>
+                                        <a href="#section3" class="btn btn-success">Continuar <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </section>
+
+                                <hr class="my-5">
+
+                                <section id="section3" class="lesson-section">
+                                    <h3 class="mb-4"><i class="bi bi-headphones text-success me-2"></i>Práctica de Pronunciación</h3>
+                                    <p>Escucha atentamente la pronunciación de cada palabra y luego graba tu propia voz para comparar:</p>
+                                    
+                                    <div class="row g-4 mb-4">
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Modelo de Pronunciación</h5>
+                                                    <div class="text-center my-3">
+                                                        <button class="btn btn-success btn-lg">
+                                                            <i class="bi bi-play-fill me-2"></i>Escuchar "Allinllachu"
+                                                        </button>
+                                                    </div>
+                                                    <audio id="model-audio" src="audio/greetings/allinllachu.mp3"></audio>
+                                                    <div class="text-center">
+                                                        <small class="text-muted">Haz clic para escuchar la pronunciación correcta</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Tu Pronunciación</h5>
+                                                    <div class="text-center my-3">
+                                                        <button id="record-btn" class="btn btn-warning btn-lg">
+                                                            <i class="bi bi-mic-fill me-2"></i>Grabar
+                                                        </button>
+                                                        <button id="stop-btn" class="btn btn-danger btn-lg" disabled>
+                                                            <i class="bi bi-stop-fill me-2"></i>Detener
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button id="play-btn" class="btn btn-outline-success" disabled>
+                                                            <i class="bi bi-play-fill me-2"></i>Reproducir tu grabación
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="feedback-section" class="card border-success mb-4 d-none">
+                                        <div class="card-header bg-success text-white">
+                                            <h5 class="mb-0">Retroalimentación</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6>Puntuación: <span class="badge bg-success">75/100</span></h6>
+                                                    <div class="progress mb-3" style="height: 20px;">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" 
+                                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6>Nivel: <span class="badge bg-warning">Intermedio</span></h6>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h6>Sugerencias para mejorar:</h6>
+                                            <ul>
+                                                <li>Intenta alargar más la última sílaba ("-chu")</li>
+                                                <li>La "ll" debe sonar más fuerte, similar a "ly"</li>
+                                                <li>Mantén un tono más uniforme durante la palabra</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <a href="#section2" class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Anterior</a>
+                                        <a href="#section4" class="btn btn-success">Continuar <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </section>
+
+                                <!-- Secciones adicionales (diálogos, ejercicios, cultura, evaluación) -->
+                                <!-- ... (similar estructura a las secciones anteriores) ... -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Quechua Ayni - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lessons.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

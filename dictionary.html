@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario - Quechua Ayni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dictionary-page">
+    <header class="container-fluid bg-success text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="images/logo.png" alt="Quechua Ayni" class="logo me-2">
+                <h1 class="h4 mb-0 d-none d-md-block">Quechua Ayni</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle me-1"></i>
+                        <span class="d-none d-md-inline">Juan Pérez</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configuración</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lessons.html">
+                                <i class="bi bi-book me-2"></i>Lecciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dictionary.html">
+                                <i class="bi bi-translate me-2"></i>Diccionario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="culture.html">
+                                <i class="bi bi-globe-americas me-2"></i>Cultura Quechua
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">
+                                <i class="bi bi-joystick me-2"></i>Juegos Educativos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">
+                                <i class="bi bi-graph-up me-2"></i>Mi Progreso
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Diccionario Quechua-Español</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar palabra..." id="dictionary-search">
+                            <button class="btn btn-success" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Categorías</h5>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action active">
+                                    <i class="bi bi-chat-square-text me-2"></i>Saludos y Presentaciones
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-people me-2"></i>Familia y Relaciones
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-egg-fried me-2"></i>Comida y Alimentación
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-house me-2"></i>Casa y Hogar
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-tree me-2"></i>Naturaleza y Medio Ambiente
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-calendar3 me-2"></i>Tiempo y Clima
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <i class="bi bi-brightness-high me-2"></i>Cultura y Tradiciones
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h4 class="mb-4">Resultados para "Allinllachu"</h4>
+                                
+                                <div class="dictionary-entry mb-5">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="mb-0">Allinllachu</h3>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="bi bi-star"></i> Guardar
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="text-muted">Saludo / Expresión</p>
+                                            <p><strong>Significado:</strong> ¿Cómo estás? (Literalmente: "¿Estás bien?")</p>
+                                            <p><strong>Pronunciación:</strong> A-yin-ya-chu</p>
+                                            <button class="btn btn-sm btn-success mb-3">
+                                                <i class="bi bi-play-fill me-1"></i> Escuchar pronunciación
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><strong>Variantes regionales:</strong></p>
+                                            <ul>
+                                                <li><strong>Cusco:</strong> Allillanchu</li>
+                                                <li><strong>Ayacucho:</strong> Allinllachu</li>
+                                                <li><strong>Ancash:</strong> Allillam</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5><i class="bi bi-chat-square-quote text-success me-2"></i>Ejemplos de uso:</h5>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <p class="mb-2"><strong>Quechua:</strong> Allinllachu, imaynallam kanki?</p>
+                                                <p class="mb-2"><strong>Español:</strong> ¿Cómo estás, cómo te encuentras?</p>
+                                                <button class="btn btn-sm btn-outline-success mt-2">
+                                                    <i class="bi bi-play-fill me-1"></i> Escuchar diálogo
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="dictionary-entry mb-5">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="mb-0">Allillanmi</h3>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="bi bi-star"></i> Guardar
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="text-muted">Respuesta a saludo</p>
+                                            <p><strong>Significado:</strong> Estoy bien</p>
+                                            <p><strong>Pronunciación:</strong> A-yi-yan-mi</p>
+                                            <button class="btn btn-sm btn-success mb-3">
+                                                <i class="bi bi-play-fill me-1"></i> Escuchar pronunciación
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><strong>Variantes regionales:</strong></p>
+                                            <ul>
+                                                <li><strong>Cusco:</strong> Allillanmi</li>
+                                                <li><strong>Ayacucho:</strong> Allinllam</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5><i class="bi bi-chat-square-quote text-success me-2"></i>Ejemplos de uso:</h5>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <p class="mb-2"><strong>Quechua:</strong> Allinllachu? - Allillanmi, rimaykullayki.</p>
+                                                <p class="mb-2"><strong>Español:</strong> ¿Cómo estás? - Estoy bien, gracias.</p>
+                                                <button class="btn btn-sm btn-outline-success mt-2">
+                                                    <i class="bi bi-play-fill me-1"></i> Escuchar diálogo
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Quechua Ayni - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
